@@ -1,0 +1,346 @@
+.customer-shell {
+  min-height: 100vh;
+  background: var(--theme-bg);
+  color: var(--theme-text);
+}
+
+.customer-topbar {
+  border-bottom: 1px solid var(--theme-card);
+  background: var(--theme-bg);
+  backdrop-filter: blur(14px);
+  position: sticky;
+  top: 0;
+  z-index: 5;
+}
+
+.customer-topbar__inner, .dashboard-main {
+  width: min(1180px, calc(100% - 2.5rem));
+  margin: auto;
+}
+
+.customer-topbar__inner {
+  min-height: 74px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.dash-brand {
+  font-weight: 800;
+  letter-spacing: .14em;
+  font-size: .78rem;
+}
+
+.dash-brand span {
+  color: var(--theme-accent);
+}
+
+.customer-nav {
+  display: flex;
+  align-items: center;
+  gap: 1.1rem;
+}
+
+.customer-nav a, .customer-nav button {
+  color: var(--theme-text);
+  text-decoration: none;
+  border: 0;
+  background: none;
+  font-size: .78rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.customer-nav a:hover, .customer-nav button:hover {
+  color: var(--theme-accent);
+}
+
+.dashboard-main {
+  padding: 4rem 0 6rem;
+}
+
+.dashboard-kicker {
+  font-size: .72rem;
+  text-transform: uppercase;
+  letter-spacing: .18em;
+  color: var(--theme-accent);
+  font-weight: 800;
+}
+
+.dashboard-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+
+.dashboard-heading h1 {
+  font: 500 clamp(2.4rem, 5vw, 4.7rem)/.95 Georgia, serif;
+  letter-spacing: -.05em;
+  margin: .7rem 0;
+}
+
+.dashboard-heading p {
+  color: var(--theme-text);
+    opacity: 0.8;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.dash-actions {
+  display: flex;
+  gap: .7rem;
+  flex-wrap: wrap;
+}
+
+.dash-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  border: 1px solid var(--theme-accent);
+  padding: .85rem 1rem;
+  font-size: .7rem;
+  text-transform: uppercase;
+  letter-spacing: .12em;
+  font-weight: 800;
+  color: var(--theme-text);
+  transition: .2s;
+}
+
+.dash-button--primary {
+  background: var(--theme-accent);
+  color: var(--theme-bg);
+}
+
+.dash-button:hover {
+  background: var(--theme-highlight);
+  border-color: var(--theme-highlight);
+  color: var(--theme-bg);
+  transform: translateY(-2px);
+}
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: 1.4fr .8fr;
+  gap: 1.2rem;
+}
+
+.dashboard-section {
+  background: var(--theme-card);
+  border: 1px solid var(--theme-bg);
+  padding: 1.4rem;
+  animation: dash-in .55s both;
+  border-radius: 8px;
+}
+
+.dashboard-section:nth-child(2) {
+  animation-delay: .08s;
+}
+
+.dashboard-section:nth-child(3) {
+  animation-delay: .16s;
+}
+
+.dashboard-section--wide {
+  grid-column: 1/-1;
+}
+
+.section-label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.2rem;
+}
+
+.section-label h2 {
+  font-size: .78rem;
+  letter-spacing: .15em;
+  text-transform: uppercase;
+  margin: 0;
+  color: var(--theme-text);
+}
+
+.section-label span {
+  font-size: .72rem;
+  color: var(--theme-highlight);
+}
+
+.pizza-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: .9rem;
+}
+
+.pizza-card {
+  border: 1px solid var(--theme-bg);
+  background: var(--theme-card);
+  overflow: hidden;
+  transition: .25s;
+  border-radius: 8px;
+}
+
+.pizza-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5);
+}
+
+.pizza-card__image {
+  height: 125px;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(135deg, var(--theme-card), var(--theme-bg));
+  font-size: 4rem;
+}
+
+.pizza-card__body {
+  padding: 1rem;
+}
+
+.pizza-card h3 {
+  margin: 0 0 .4rem;
+  font: 600 1.1rem Georgia, serif;
+  color: var(--theme-text);
+}
+
+.pizza-card p {
+  margin: 0 0 .8rem;
+  color: var(--theme-text);
+    opacity: 0.7;
+  font-size: .78rem;
+  line-height: 1.5;
+}
+
+.pizza-card__meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: .8rem;
+  font-weight: 800;
+}
+
+.pizza-card__meta span {
+  color: var(--theme-highlight);
+}
+
+.pizza-card button {
+  border: 0;
+  background: none;
+  color: var(--theme-accent);
+  font-size: .7rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.progress {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: .5rem;
+}
+
+.progress-step {
+  position: relative;
+  text-align: center;
+  color: var(--theme-text);
+    opacity: 0.5;
+  font-size: .68rem;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+}
+
+.progress-step:not(:last-child):after {
+  content: "";
+  position: absolute;
+  top: 12px;
+  left: 68%;
+  width: 65%;
+  height: 1px;
+  background: var(--theme-card);
+}
+
+.progress-step.is-active {
+  color: var(--theme-accent);
+  font-weight: 800;
+}
+
+.progress-dot {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  margin: 0 auto .6rem;
+  background: var(--theme-bg);
+  color: var(--theme-text);
+    opacity: 0.5;
+  font-size: .65rem;
+}
+
+.is-active .progress-dot {
+  background: var(--theme-accent);
+  color: var(--theme-bg);
+}
+
+.order-row {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr .7fr .8fr auto;
+  gap: 1rem;
+  align-items: center;
+  border-top: 1px solid var(--theme-bg);
+  padding: 1rem 0;
+  font-size: .8rem;
+  color: var(--theme-text);
+}
+
+.order-row small {
+  display: block;
+  color: var(--theme-text);
+    opacity: 0.5;
+  margin-top: .25rem;
+}
+
+.status-pill {
+  display: inline-block;
+  padding: .35rem .55rem;
+  background: var(--theme-bg);
+  color: var(--theme-text);
+  font-size: .64rem;
+  letter-spacing: .06em;
+  border-radius: 4px;
+}
+
+.status-pill--paid {
+  background: var(--theme-highlight);
+  color: var(--theme-bg);
+}
+
+@keyframes dash-in {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@media (max-width: 850px) {
+  .dashboard-heading { display: block; }
+  .dash-actions { margin-top: 1.3rem; }
+  .dashboard-grid { grid-template-columns: 1fr; }
+  .dashboard-section--wide { grid-column: auto; }
+  .pizza-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 560px) {
+  .customer-topbar__inner, .dashboard-main { width: min(100% - 1.5rem, 1180px); }
+  .customer-nav a { display: none; }
+  .dashboard-main { padding-top: 2.5rem; }
+  .pizza-grid { grid-template-columns: 1fr; }
+  .order-row { grid-template-columns: 1fr 1fr; }
+  .order-row .status-pill { justify-self: start; }
+}

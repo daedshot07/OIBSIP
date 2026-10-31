@@ -1,0 +1,103 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #A84F38;
+  --color-primary-dark: #7E3328;
+  --color-secondary: #171513;
+  --color-accent: #B86A3C;
+  --color-background: #F4EFE6;
+  --color-surface: #E9DDCC;
+  --color-text: #171513;
+  --color-text-light: #756E65;
+  --color-dash-bg: var(--theme-bg);
+  --color-dash-card: var(--theme-card);
+  --color-dash-text: var(--theme-text);
+  --color-dash-accent: var(--theme-accent);
+  --color-dash-highlight: var(--theme-highlight);
+}
+
+:root {
+  color-scheme: light;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  --warm-charcoal: #171513;
+  --warm-near-black: #0D0C0B;
+  --warm-ivory: #F4EFE6;
+  --warm-cream: #E9DDCC;
+  --warm-terracotta: #A84F38;
+  --warm-brick: #7E3328;
+  --warm-orange: #B86A3C;
+  --warm-beige: #C8B39A;
+  --warm-muted: #A9A39A;
+  
+  --theme-bg: #141210;
+  --theme-card: #24201C;
+  --theme-text: #F6F0E8;
+  --theme-accent: #D65A3A;
+  --theme-highlight: #E58A45;
+}
+
+.dashboard-light-override {
+  --theme-bg: #d0c0a8; 
+  --theme-card: #e4d8c8; 
+  --theme-text: #2C2621;
+  --theme-accent: #D65A3A;
+  --theme-highlight: #C2702E;
+}
+
+.dashboard-theme {
+  background-color: var(--theme-bg);
+  color: var(--theme-text);
+  min-height: 100vh;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  min-width: 320px;
+  scroll-behavior: smooth;
+  scroll-padding-top: 84px;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background: var(--warm-ivory);
+  color: var(--warm-charcoal);
+  font-family: 'DM Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+button,
+a,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+img,
+svg {
+  display: block;
+}
+
+:focus-visible {
+  outline: 2px solid var(--warm-orange);
+  outline-offset: 4px;
+}
+
+::selection {
+  background: rgba(168, 79, 56, 0.24);
+  color: var(--warm-charcoal);
+}

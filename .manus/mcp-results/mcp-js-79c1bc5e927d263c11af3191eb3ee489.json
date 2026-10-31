@@ -1,0 +1,4 @@
+In-app Browser JS state was reset; rebuild state before continuing.
+Browser cell stopped: ACTION_CANCELLED
+ERROR ACTION_CANCELLED
+{"control":{"documentRevision":"rev_18fa670e-aa76-4618-8abc-808dc443a44c","error":{"code":"ACTION_CANCELLED","retryable":false},"requiresSnapshot":true,"status":"error","tabId":"tab_4f72bfe2-f822-4e08-868c-914299077b94"},"kind":"error","schema":"manus.browser/v1"}

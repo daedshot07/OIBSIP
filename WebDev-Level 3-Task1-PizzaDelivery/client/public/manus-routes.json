@@ -1,0 +1,17 @@
+{
+  "routes": [
+    { "path": "/", "title": "PizzaDev — Home" },
+    { "path": "/register", "title": "PizzaDev — Account Coming Soon" },
+    { "path": "/login", "title": "PizzaDev — Login" },
+    { "path": "/forgot-password", "title": "PizzaDev — Forgot Password" },
+    { "path": "/reset-password/:token", "title": "PizzaDev — Reset Password" },
+    { "path": "/dashboard", "title": "PizzaDev — Dashboard" },
+    { "path": "/builder", "title": "PizzaDev — Pizza Builder" },
+    { "path": "/summary", "title": "PizzaDev — Order Summary" },
+    { "path": "/tracking/:orderId", "title": "PizzaDev — Order Tracking" },
+    { "path": "/admin/login", "title": "PizzaDev — Admin Login" },
+    { "path": "/admin", "title": "PizzaDev — Admin" },
+    { "path": "/admin/inventory", "title": "PizzaDev — Admin Inventory" },
+    { "path": "/admin/orders", "title": "PizzaDev — Admin Orders" }
+  ]
+}
